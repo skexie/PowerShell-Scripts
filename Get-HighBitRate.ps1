@@ -39,7 +39,6 @@ ForEach($mp3 in $mp3s) {
             $custom_obj | Add-Member -MemberType NoteProperty -Name "FileName" -Value $mp3.name
             $custom_obj | Add-Member -MemberType NoteProperty -Name "Path" -Value $mp3.Directory.FullName
             $custom_obj | Add-Member -MemberType NoteProperty -Name "Bitrate" -Value $bitratestring
-            $collection += $custom_obj
         }
         $collection += $custom_obj 
     }
