@@ -15,7 +15,8 @@ ForEach($mp3 in $mp3s) {
     # Find the index of the bit rate attribute.
     For($index=5; -Not $bitrateAttrib;++$index) {
         $name=$directoryObject.GetDetailsOf($directoryObject.Items,$index)
-        $name
+        #uncomment the next line to display the available attributes for the file
+        #$name
         if($name -eq 'Bit rate') { $bitrateAttrib=$index }
     }
  
