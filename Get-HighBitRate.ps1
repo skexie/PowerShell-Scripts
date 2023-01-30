@@ -1,4 +1,6 @@
-﻿function Get-HighBitRate([string]$folder=".",[int]$minBitrate=192,[switch]$details=$true, [string]$fileExt="*.mp3") {
+﻿#modified from original concept of https://www.zerrouki.com/find-mp3-files-with-low-bit-rate/
+
+function Get-HighBitRate([string]$folder=".",[int]$minBitrate=192,[switch]$details=$true, [string]$fileExt="*.mp3") {
 $shellObject=New-Object -ComObject Shell.Application
 $bitrateAttrib=0
 
